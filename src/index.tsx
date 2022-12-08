@@ -11,6 +11,14 @@ import './assets/styles/styles.css'
 
 const temp_props = "Brandon's Phonebook"
 
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//  </React.StrictMode>
+// );
+
+
 ReactDOM.render(
   <React.StrictMode>
     {/* <FirebaseAppProvider firebaseConfig={firebaseConfig} suspense={true}>

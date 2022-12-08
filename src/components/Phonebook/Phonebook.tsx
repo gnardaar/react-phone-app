@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { useGetData } from '../../custom-hooks'
+import { useGetData } from '../../custom-hooks'
 import { Link } from "react-router-dom";
 import { Paper } from "@material-ui/core";
 import {
@@ -35,8 +35,8 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-// import { DataTable } from '../../components/DataTable';
-// import { ContactForm } from '../ContactForm'
+import { DataTable } from '../../components/DataTable';
+import { ContactForm } from '../ContactForm'
 
 interface PhonebookProps {
   history: RouteComponentProps["history"];
@@ -237,7 +237,7 @@ export const Phonebook = withRouter(( props:PhonebookProps ) => {
                     <DialogTitle id="form-dialog-title">Add New Contact</DialogTitle>
                     <DialogContent>
                         <DialogContentText></DialogContentText>
-                        {/* <ContactForm /> */}
+                        <ContactForm />
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={handleDialogClickClose} color="primary">Cancel</Button>
@@ -267,7 +267,7 @@ export const Phonebook = withRouter(( props:PhonebookProps ) => {
         </MUIDrawer>
         <main className={`${clsx(classes.content, {[classes.contentShift]: open,})} ${classes.leftMargin}`}>
             <div className={classes.drawerHeader} />
-                {/* <DataTable /> */} {/* Keep this commented out for now */}
+                <DataTable /> 
         </main>
     </div>
 )
