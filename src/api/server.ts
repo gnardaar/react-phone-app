@@ -1,10 +1,10 @@
 import React from 'react'
 
-let token = 'b8ff7c7245ca806d097fe6b10f06ab364c685f7e644e4a94';
+let token = '....................................................place honebook token here........................................................................';
 
 export const server_calls = {
   get: async () => {
-    const response = await fetch(`http://127.0.0.1:5000/api/contacts`, {
+    const response = await fetch(`...................................place phonebook glitch app here.........................................`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -21,7 +21,7 @@ export const server_calls = {
   },
 
   create: async(data: any = {}) => {
-    const response = await fetch(`https://my-phonebook-ct-main.herokuapp.com/api/contacts`,{
+    const response = await fetch(`.................................................place phonebook glitch app here.........................................................`,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ export const server_calls = {
 },
 
   update: async (id: string, data: any = {}) => {
-    const response = await fetch(`http://127.0.0.1:5000/api/contacts/${id}`, {
+    const response = await fetch(`....................................................place phonebook flask app here.................................../${id}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ export const server_calls = {
     });
   },
   delete: async (id: string) => {
-    const response = await fetch(`http://127.0.0.1:5000/api/contacts/${id}`, {
+    const response = await fetch(`///////////////////////////////////////////////////add phonebook flask app here\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
