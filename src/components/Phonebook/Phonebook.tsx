@@ -267,7 +267,7 @@ export const Phonebook = withRouter(( props:PhonebookProps ) => {
           </MUIDrawer>
           <main className={`${clsx(classes.content, {[classes.contentShift]: open,})} ${classes.leftMargin}`}>
               <div className={classes.drawerHeader} />
-                  <DataTable /> Keep this commented out for now
+                  <DataTable /> 
           </main>
       </div>
   )

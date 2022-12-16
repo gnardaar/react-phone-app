@@ -8,7 +8,6 @@ import { Button, Dialog,
     DialogContentText,
     DialogTitle } from '@material-ui/core';
 import { ContactForm } from '../ContactForm';
-
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 90, hide: true },
   { field: "name", headerName: "Contact Name", flex: 1 },

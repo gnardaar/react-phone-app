@@ -7,6 +7,7 @@ export const useGetData = () => {
 
 		// This is a function that will get the data
     async function handleDataFetch(){
+   
         const result = await server_calls.get();
         setData(result)
     }

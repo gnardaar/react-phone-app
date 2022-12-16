@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar } from '../Navbar'
-
+debugger
 export const Contact = () => {
     return (
         <div>

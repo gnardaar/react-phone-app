@@ -1,10 +1,11 @@
 import React from 'react'
 
-let token = '....................................................place honebook token here........................................................................';
+let token = 'a154d1e08bec7dd0f1a7132a0f14cef5bd1885927e01e877';
 
 export const server_calls = {
   get: async () => {
-    const response = await fetch(`...................................place phonebook glitch app here.........................................`, {
+debugger
+    const response = await fetch(`https://glitch.com/~storm-giant-drug/`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -21,7 +22,7 @@ export const server_calls = {
   },
 
   create: async(data: any = {}) => {
-    const response = await fetch(`.................................................place phonebook glitch app here.........................................................`,{
+    const response = await fetch(`hhttps://glitch.com/~storm-giant-drug/api/contacts`,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -38,7 +39,7 @@ export const server_calls = {
 },
 
   update: async (id: string, data: any = {}) => {
-    const response = await fetch(`....................................................place phonebook flask app here.................................../${id}`, {
+    const response = await fetch(`https://glitch.com/~storm-giant-drug/api/contacts${id}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -48,7 +49,7 @@ export const server_calls = {
     });
   },
   delete: async (id: string) => {
-    const response = await fetch(`///////////////////////////////////////////////////add phonebook flask app here\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\${id}`, {
+    const response = await fetch(`https://glitch.com/~storm-giant-drug/api/contacts${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
